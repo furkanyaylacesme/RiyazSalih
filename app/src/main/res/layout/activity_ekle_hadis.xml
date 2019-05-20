@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".EkleHadis">
+
+
+
+<!--
+
+    <RelativeLayout
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="20dp"
+    android:layout_centerInParent="true"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+    android:layout_marginBottom="10dp"
+    android:id="@+id/layout_input"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+        <EditText
+            android:hint="Lütfen Ders adını giriniz"
+            android:textColor="#000000"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText" />
+    </LinearLayout>
+
+       <View
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="#000000"
+            android:id="@+id/line_layout_one"
+            android:layout_below="@id/layout_input"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"></View>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/layout_save"
+        android:gravity="center_horizontal"
+        android:layout_below="@id/line_layout_one"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:text="KAYDET"
+            android:id="@+id/button_save" />
+   </LinearLayout>
+
+
+
+    <View
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="#000000"
+        android:id="@+id/line_layout_two"
+        android:layout_below="@id/layout_save"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"></View>
+
+    <LinearLayout
+    android:layout_marginBottom="10dp"
+    android:layout_below="@id/line_layout_two"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+            <Spinner
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner_show"
+            android:spinnerMode="dropdown"
+            android:outlineProvider="paddedBounds" />
+    </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>-->
+
+    <Spinner
+        android:id="@+id/kategorispinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="14dp"
+        android:spinnerMode="dialog" />
+
+    <EditText
+        android:id="@+id/kitapAdi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ktgrlst"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="14dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/raviAdi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/kitapAdi"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="14dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/hadisText"
+        android:layout_width="390dp"
+        android:layout_height="302dp"
+        android:layout_below="@+id/raviAdi"
+        android:layout_alignStart="@+id/raviAdi"
+        android:layout_alignLeft="@+id/raviAdi"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="19dp"
+        android:ems="10"
+        android:hint="Giriniz"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/hadisEkle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="EKLE" />
+</LinearLayout>
